@@ -5,6 +5,7 @@ class Service{
     getUsuarios(){
         return bd
     }
+    
     getUsuariosById(id){
 
         const objetoUsuario = bd.find(item => item.id == id)
@@ -53,3 +54,4 @@ class Service{
   }
 
 }
+module.exports = Service
